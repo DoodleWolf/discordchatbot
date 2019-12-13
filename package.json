@@ -1,0 +1,22 @@
+{
+  "name": "discord-bot",
+  "version": "1.0.0",
+  "description": "the discord bot",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DoodleWolf/discordchatbot.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DoodleWolf/discordchatbot/issues"
+  },
+  "homepage": "https://github.com/DoodleWolf/discordchatbot#readme",
+  "dependencies": {
+    "discord.js": "^11.5.1"
+  }
+}
