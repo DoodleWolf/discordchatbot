@@ -3,10 +3,10 @@ const fs = require('fs');
 
 const client = new Discord.Client();
 
-const config = require('./auth.json');
+// const config = require('./auth.json');
 
 client.on('message', msg => {
-  if (msg.content.startsWith(config.prefix+'sicc')) {
+  if (msg.content.startsWith('$sicc')) {
     let [command, ...channelName] = msg.content.split(" ");
     if (!msg.guild) {
       return msg.reply('no private service is available in your area at the moment. Please contact a service representative for more details.');
@@ -31,7 +31,7 @@ client.on('message', msg => {
       })
       .catch(console.log);
   }
-  if(msg.content.startsWith(config.prefix+'leave')) {
+  if(msg.content.startsWith('$leave')) {
     let [command, ...channelName] = msg.content.split(" ");
     let voiceChannel = msg.guild.channels.find("name", channelName.join(" "));
     voiceChannel.leave();
